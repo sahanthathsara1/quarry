@@ -72,6 +72,7 @@ while cap.isOpened():
         if volume:
             cv2.putText(frame, f"Volume: {volume:.1f}cm³", (x, y + h + 20),
                        cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 0, 0), 2)
+            print(f"Volume: {volume:.1f}cm^3")
     
     # Show the processed frame
     cv2.imshow('Volume Measurement', frame)
